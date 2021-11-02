@@ -12,7 +12,7 @@ WITH bmis AS (
         name,
         weight,
         height,
-        ROUND(weight / (height * height), 2) AS bmi,
+        {{ bmi() }},
         generation
     FROM
         {{ ref('stage__pokemon') }}

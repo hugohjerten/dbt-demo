@@ -1,0 +1,5 @@
+version: 2
+
+macros:
+  - name: bmi
+    description: The bmi of the pokemon, weight divided by the square of the height.
