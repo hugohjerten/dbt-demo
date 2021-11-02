@@ -1,0 +1,6 @@
+version: 2
+
+macros:
+  - name: total_attack
+    description: >
+      The total attack of the pokemon, Base Attack + the Base Special Attack.

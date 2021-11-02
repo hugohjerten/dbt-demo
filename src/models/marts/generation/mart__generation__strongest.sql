@@ -8,7 +8,7 @@
 
 WITH attack_levels AS (
     SELECT
-        attack + sp_attack AS attack_sum,
+        {{ total_attack() }},
         generation
     FROM
         {{ ref('stage__pokemon') }}
@@ -22,7 +22,7 @@ SELECT
 FROM
     attack_levels
 WHERE
-    attack_sum >= 150
+    total_attack >= 150
 GROUP BY
     generation
 ORDER BY
