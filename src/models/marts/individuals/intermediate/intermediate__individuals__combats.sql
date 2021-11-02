@@ -52,6 +52,8 @@ SELECT
     pokedex_number,
     COALESCE(wins, 0) AS wins,
     COALESCE(losses, 0) AS losses,
-    COALESCE(wins + losses, 0) AS combats
+    COALESCE(wins + losses, 0) AS combats,
+    ROUND(wins / (wins + losses), 2) AS winner_ratio,
+    ROUND(losses / (wins + losses), 2) AS loser_ratio
 FROM
     per_pokemon
