@@ -15,5 +15,9 @@ models:
         description: Number of participated combats.
       - name: winner_ratio
         description: Ratio of wins/combats.
+        tests:
+          - not_null
       - name: loser_ratio
         description: Ratio of losses/combats.
+        tests:
+          - not_null
