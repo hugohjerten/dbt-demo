@@ -2,15 +2,45 @@
 version: 2
 
 models:
-- name: mart__generation__strongest
-  description: >
-    The generations with the strongest non-legendary pokemons, i.e. a combined
-    Base Attack & Base Special Attack >= 150.
-  columns:
-    - name: generation
-      description: >
-        The numbered generation which the Pokemon was first introduced.
-    - name: pokemons
-      description: >
-        The number of pokemons with a combined Base Attack & Base Special
-        Attack >= 150.    
+  - name: mart__generation__strongest
+    description: >
+      The generations with the most strong non-legendary pokemons, i.e. a combined
+      Base Attack & Base Special Attack >= 150.
+    columns:
+      - name: generation
+        description: >
+          The numbered generation which the Pokemon was first introduced.
+      - name: pokemons
+        description: >
+          The number of pokemons with a combined Base Attack & Base Special
+          Attack >= 150.
+  - name: mart__generation__bmi_average
+    description: Some average/min/max statistics of all pokemons by generation.
+    columns:
+      - name: generation
+        description: >
+          The numbered generation which the Pokemon was first introduced.
+      - name: pokemons
+        description: The number of pokemons
+      - name: mean_bmi
+        description: The average bmi.
+      - name: min_bmi
+        description: The smallest bmi.
+      - name: max_bmi
+        description: The largest bmi.
+      - name: mean_weight
+        description: The average weight.
+      - name: min_weight
+        description: The smallest weight.
+      - name: max_weight
+        description: The largest weight.
+      - name: max_weight
+        description: The largest weight.
+      - name: mean_height
+        description: The average height.
+      - name: min_height
+        description: The smallest height.
+      - name: max_height
+        description: The largest height.
+      - name: max_height
+        description: The largest height.
