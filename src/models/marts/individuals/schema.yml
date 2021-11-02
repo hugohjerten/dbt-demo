@@ -34,3 +34,20 @@ models:
         description: Ratio of wins/combats.
       - name: loser_ratio
         description: Ratio of losses/combats.
+  - name: mart__individuals__losers
+    description: 50 pokemon with the most losses and fought battles.
+    columns:
+      - name: pokedex_number
+        description: The entry number of the Pokemon in the National Pokedex.
+      - name: name
+        description: The English name of the Pokemon.
+      - name: wins
+        description: Number of wins.
+      - name: losses
+        description: Number of losses.
+      - name: combats
+        description: Number of participated combats.
+      - name: winner_ratio
+        description: Ratio of wins/combats.
+      - name: loser_ratio
+        description: Ratio of losses/combats.
