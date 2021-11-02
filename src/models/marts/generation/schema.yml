@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+- name: mart__generation__strongest
+  description: >
+    The generations with the strongest non-legendary pokemons, i.e. a combined
+    Base Attack & Base Special Attack >= 150.
+  columns:
+    - name: generation
+      description: >
+        The numbered generation which the Pokemon was first introduced.
+    - name: pokemons
+      description: >
+        The number of pokemons with a combined Base Attack & Base Special
+        Attack >= 150.    
