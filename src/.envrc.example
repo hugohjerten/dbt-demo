@@ -1,0 +1,8 @@
+# Absolute path to the root of repository
+export DBT_PROFILES_DIR=
+
+# Path to credentials to dbt-service service account for project dbt-demo-data-days-2021
+export DBT_KEY_FILE=
+
+# Specify your own personal dataset to run against, in the format 'plaground_<your_name>'.  If not specified, 'plaground_common' is used.
+# export DBT_PERSONAL_PLAYGROUND=

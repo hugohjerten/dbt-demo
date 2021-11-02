@@ -1,0 +1,37 @@
+config:
+  send_anonymous_usage_stats: False
+
+dbt-demo-data-days:
+  target: playground
+  outputs:
+    # The playground datasets will be cleaned regurly
+    playground:
+      type: bigquery
+      method: service-account
+      project: hugo-hjerten-sandbox-lsoq
+      dataset: "{{ env_var('DBT_PERSONAL_PLAYGROUND', 'playground_common') }}"
+      threads: 1
+      timeout_seconds: 300
+      location: EU
+      retries: 1
+      keyfile: "{{ env_var('DBT_KEY_FILE') }}"
+    dev:
+      type: bigquery
+      method: service-account
+      project: hugo-hjerten-sandbox-lsoq
+      dataset: dev
+      threads: 1
+      timeout_seconds: 300
+      location: EU
+      retries: 2
+      keyfile: "{{ env_var('DBT_KEY_FILE') }}"
+    prod:
+      type: bigquery
+      method: service-account
+      project: hugo-hjerten-sandbox-lsoq
+      dataset: prod
+      threads: 1
+      keyfile: "{{ env_var('DBT_KEY_FILE') }}"
+      timeout_seconds: 300
+      location: EU
+      retries: 2
