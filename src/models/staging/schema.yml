@@ -1,0 +1,97 @@
+
+version: 2
+
+models:
+- name: stage__pokemon
+  description: All pokemons.
+  columns:
+    - name: abilities
+      description: >
+        An array of abilities that the Pokemon is capable of having.
+    - name: against_bug
+      description: &against >
+        The amount of damage taken against an attack of a particular type.
+    - name: against_dark
+      description: *against
+    - name: against_dragon
+      description: *against
+    - name: against_electric
+      description: *against
+    - name: against_fairy
+      description: *against
+    - name: against_fight
+      description: *against
+    - name: against_fire
+      description: *against
+    - name: against_flying
+      description: *against
+    - name: against_ghost
+      description: *against
+    - name: against_grass
+      description: *against
+    - name: against_ground
+      description: *against
+    - name: against_ice
+      description: *against
+    - name: against_normal
+      description: *against
+    - name: against_poison
+      description: *against
+    - name: against_psychic
+      description: *against
+    - name: against_rock
+      description: *against
+    - name: against_steel
+      description: *against
+    - name: against_water
+      description: *against
+    - name: attack
+      description: The Base Attack of the Pokemon.
+    - name: base_egg_steps
+      description: The number of steps required to hatch an egg of the Pokemon.
+    - name: base_happiness
+      description: Base Happiness of the Pokemon.
+    - name: base_total
+      description: Base Total of the Pokemon.
+    - name: capture_rate
+      description: Capture Rate of the Pokemon.
+    - name: classification
+      description: >
+        The Classification of the Pokemon as described by the Sun and Moon
+        Pokedex.
+    - name: defence
+      description: The Base Defence of the Pokemon.
+    - name: experience_growth
+      description: The Experience Growth of the Pokemon.
+    - name: height
+      description: Height of the Pokemon in meters.
+    - name: hp
+      description: The Base HP of the Pokemon.
+    - name: japanese_name
+      description: The Original Japanese name of the Pokemon.
+    - name: name
+      description: The English name of the Pokemon.
+    - name: percentage_male
+      description: >
+        The percentage of the species that are male. Blank if the Pokemon is
+        genderless.
+    - name: pokedex_number
+      description: The entry number of the Pokemon in the National Pokedex.
+    - name: sp_attack
+      description: The Base Special Attack of the Pokemon.
+    - name: sp_defence
+      description: The Base Special Defence of the Pokemon.
+    - name: base_speed
+      description: The Base Speed of the Pokemon.
+    - name: type_1
+      description: The Primary Type of the Pokemon.
+    - name: type_2
+      description: The Secondary Type of the Pokemon.
+    - name: weight
+      description: The Weight of the Pokemon in kilograms.
+    - name: generation
+      description: >
+        The numbered generation which the Pokemon was first introduced.
+    - name: is_legendary
+      description: Denotes if the Pokemon is legendary.
+
