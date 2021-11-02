@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+  - name: intermediate__individuals__combats
+    description: Aggregated combat statistics per pokemon.
+    columns:
+      - name: pokedex_number
+        description: The entry number of the Pokemon in the National Pokedex.
+      - name: wins
+        description: Number of wins.
+      - name: losses
+        description: Number of losses.
+      - name: combats
+        description: Number of participated combats.
