@@ -94,12 +94,3 @@ models:
           The numbered generation which the Pokemon was first introduced.
       - name: is_legendary
         description: Denotes if the Pokemon is legendary.
-  - name: stage__combats
-    description: Available pokemon combats.
-    columns:
-      - name: first
-        description: Pokeindex of first combating pokemon.
-      - name: second
-        description: Pokeindex of second combating pokemon.
-      - name: winner
-        description: Pokeindex of winning pokemon.

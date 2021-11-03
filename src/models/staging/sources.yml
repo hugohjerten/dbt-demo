@@ -99,12 +99,3 @@ sources:
               The numbered generation which the Pokemon was first introduced.
           - name: is_legendary
             description: Denotes if the Pokemon is legendary.
-      - name: combats
-        description: Available pokemon combats.
-        columns:
-          - name: First_pokemon
-            description: Pokeindex of first combating pokemon.
-          - name: Second_pokemon
-            description: Pokeindex of second combating pokemon.
-          - name: Winner
-            description: Pokeindex of winning pokemon.
