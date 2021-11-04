@@ -3,7 +3,7 @@ version: 2
 
 models:
   - name: mart__individuals__bmi
-    description: Some average/min/max statistics of all pokemons by generation.
+    description: Anthropometry of individual pokemon.
     columns:
       - name: pokedex_number
         description: The entry number of the Pokemon in the National Pokedex.
