@@ -33,6 +33,8 @@ Show the content of some files
 # list models dir
 tree models -L 4
 
+# explain naming conventions!
+
 # finished data products
 bat models/marts/individuals/schema.yml
 bat models/marts/individuals/mart__individuals__bmi.sql
